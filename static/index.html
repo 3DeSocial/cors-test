@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test File</title>
+  </head>
+  <body>
+  	<h1>Image Tags Rendered in HTML</h1>
+  	<img src="https://arweave.net/_O9UOvyFcVt34lhFvQ6yCBTXRRL5ZjKVqID6mq-l88g">
+  	<img src="https://images.deso.org/334cd472017b46b1653f2dbae2ec50bace37fd98ad06d872915166ed079822ab.webp">  	
+<script type="module">
+  import * as THREE from 'https://cdn.skypack.dev/three';
+		console.log('hello');
+		let img = new Image();
+		img.src = "https://images.deso.org/334cd472017b46b1653f2dbae2ec50bace37fd98ad06d872915166ed079822ab.webp";
+		img.onload = function(){
+			console.log(this);
+			console.log(this.width);
+			console.log(this.height);
+
+			   const textureLoader = new THREE.ImageLoader()
+                console.log('image source: ',this.src);
+          const texture = textureLoader.load(this.src);
+
+
+
+
+		}
+	</script>
+  </body>
+</html>
